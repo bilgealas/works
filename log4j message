@@ -1,0 +1,28 @@
+package deneme;
+
+// Import log4j classes.
+import org.apache.log4j.Logger;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.PropertyConfigurator;
+
+public class Log4jTest {
+
+  // Define a static logger variable so that it references the
+  // Logger instance named "MyApp".
+  public static Logger logger = Logger.getLogger(Log4jTest.class);
+
+  public static void main(String[] args) {
+
+    // Set up a simple configuration that logs on the console.
+    PropertyConfigurator.configure(args[0]);
+
+    logger.debug("Debug message.");
+    logger.info("Entering application.");
+    
+    logger.info("Entering application.");
+    logger.fatal("fatal Log message.");
+    logger.warn("Log warn message");
+    
+    
+  }
+}
