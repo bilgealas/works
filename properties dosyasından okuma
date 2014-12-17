@@ -1,0 +1,84 @@
+package deneme;
+
+
+import java.io.FileInputStream;
+import java.util.Properties;
+import java.io.InputStream;
+import java.util.Scanner;
+import java.io.IOException;
+
+public class ProClass {
+	
+	public static void main(String[] args)
+	{
+	 
+		Scanner in =new Scanner (System.in);
+		Properties prop = new Properties ();
+		InputStream input = null;
+		
+		try {
+			input = new FileInputStream(args[0]);
+			prop.load(input);
+			
+			String sayilar = prop.getProperty("sayilar");
+			
+			System.out.println(sayilar);
+			
+		
+			
+		    String[] sayi=sayilar.split(" ");
+		    
+		    int rakamlar[]= new int[sayi.length];
+		    int i;
+		    for( i = 0 ; i<sayi.length ; i++)
+		    {
+		    	System.out.println(sayi[i]);	
+		    	rakamlar[i]=Integer.parseInt(sayi[i]);
+		    }
+		    
+		    
+	    	 int j,k;
+	    	 int temp=0;
+	    	 for (k=1;k<sayi.length;k++)
+	    	 {
+	    		 for (j=k-1;j>=0;j--)
+	    		 {
+	    			 if(rakamlar[j]<=rakamlar[k])
+	    				 break;
+	    			 temp = rakamlar[k];
+	    			 rakamlar[k]=rakamlar[j];
+	    			 rakamlar[j]=temp; 
+	    			  }
+	    		 
+	    	 }
+		    
+		    for(i=0;i<sayi.length;i++){
+	    		 System.out.print(" "+rakamlar[i]);
+	    		 System.out.println(); 
+		    }
+		    
+		    
+	
+		} 
+		catch (IOException ex)
+		     {
+			ex.printStackTrace();
+			
+		      }
+	
+		finally {
+			if(input!= null ){
+				try {
+					input.close();
+					}
+					catch (IOException e) {
+						e.printStackTrace();
+					}
+			
+			}
+		}
+	}
+	
+	
+
+	}
