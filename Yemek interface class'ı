@@ -1,0 +1,11 @@
+public interface Yemek {
+
+	public  void sosluYemek();
+	
+	public void isitilacakYemek();
+	
+	public void sogukYemek();
+	
+	
+	
+}
