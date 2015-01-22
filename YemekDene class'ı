@@ -1,0 +1,19 @@
+
+public class YemekDene {
+
+     public static void main (String[] args){
+    	 
+    	 Yemek y1 = new Makarna("Spagetti");
+    	 Yemek y2 =new SalataCesitleri("Sezar salata");
+    	 
+    	 
+    	 y1.sosluYemek();
+    	 y2.isitilacakYemek();
+    	 
+    	 y2.sogukYemek();
+     }
+     
+    
+}
+
+
