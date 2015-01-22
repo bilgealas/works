@@ -1,0 +1,29 @@
+
+public class SalataCesitleri implements Yemek {
+
+	public SalataCesitleri(String isim) {
+		
+
+	}
+
+	@Override
+	public void sosluYemek() {
+		System.out.println("Salatanın hazır sosunu dök!");
+		
+		
+	}
+
+	@Override
+	public void isitilacakYemek() {
+	System.out.println("Salata ısıtılmaz !!!");
+		
+	}
+
+	@Override
+	public void sogukYemek() {
+		
+		System.out.println("Salatanızı afiyetle yiyebilirsiniz ...");
+		
+	}
+
+}
