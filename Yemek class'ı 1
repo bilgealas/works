@@ -1,0 +1,30 @@
+
+public class Makarna implements Yemek {
+
+	public Makarna(String isim) {
+		
+		
+		}
+	
+
+
+
+	@Override
+	public void sosluYemek() {
+		System.out.println("Makarnaya sos dökmelisin !");
+		
+	}
+
+	@Override
+	public void isitilacakYemek() {
+		System.out.println("Makarnanı yemeden önce ısıt !");
+		
+	}
+
+	@Override
+	public void sogukYemek() {
+		System.out.println("Makarnayı soğuk yememelisin .");
+		
+	}
+
+}
