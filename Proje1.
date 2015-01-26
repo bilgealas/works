@@ -1,0 +1,28 @@
+
+public class KaradenizBol extends YoreselYemek implements Yag {
+
+	public KaradenizBol(String isim) {
+		super(isim);
+		}
+
+	public void hamsiKullan(){
+		System.out.println("Yemeğin içinde hamsi vardır.");
+	}
+	
+	public void misirUnuKullan(){
+		System.out.println("Yemeğin içinde mısır unu vardır.");
+	}
+	
+	@Override
+	public void bolgeSoyle() {
+		System.out.println("Karadeniz Bölgesine aittir. ");
+
+	}
+
+	@Override
+	public void yagKullan() {
+		System.out.println("Yemeklerde her zaman tereyağını kullanırız.");
+		
+	}
+
+}
