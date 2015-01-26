@@ -1,0 +1,29 @@
+public class Calistir {
+
+	public static void main(String[] args) {
+	   
+		YoreselYemek yy1 = new KaradenizBol ("Mıhlama");
+		YoreselYemek yy2 = new KaradenizBol ("Hamsili Pilav");
+		YoreselYemek yy3= new EgeBol ("Zeytinyağlı Enginar ");
+		
+		
+		yy1.adSoyle();
+		yy1.bolgeSoyle();
+		((KaradenizBol)yy1).misirUnuKullan();
+		((KaradenizBol) yy1).yagKullan();
+		
+		System.out.println("************");
+
+		yy2.adSoyle();
+		yy2.bolgeSoyle();
+		((KaradenizBol) yy2).hamsiKullan();
+		
+		System.out.println("************");
+		
+		yy3.adSoyle();
+		yy3.bolgeSoyle();
+		((EgeBol) yy3).sebzeKullan();
+		((EgeBol) yy3).yagKullan();
+	}
+
+}
