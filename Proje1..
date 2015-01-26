@@ -1,0 +1,29 @@
+
+public class EgeBol extends YoreselYemek implements Yag {
+
+	public EgeBol(String isim) {
+		super(isim);
+		
+	}
+
+	public void sebzeKullan(){
+		
+		System.out.println("Sebzeli bir yemektir .");
+	}
+	
+	
+	
+	@Override
+	public void bolgeSoyle() {
+	
+		System.out.println("Ege Bölgesine ait yemektir.");
+	}
+
+	@Override
+	public void yagKullan() {
+		
+		System.out.println("Yemekler de zeytinyağı kullanılır.");
+		
+	}
+
+}
