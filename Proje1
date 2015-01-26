@@ -1,0 +1,26 @@
+public abstract class YoreselYemek {
+
+	private String isim;
+	
+	public YoreselYemek(String isim) {
+
+		super();
+		this.isim= isim;
+		
+	}
+
+	public void adSoyle () {
+		System.out.println("Yemeğin adı: "+ isim);
+	}
+	
+	public abstract void bolgeSoyle();
+	
+	
+	public String getIsim() {
+		return isim;
+	}
+
+	public void setIsim(String isim) {
+		this.isim = isim;
+	}
+}
