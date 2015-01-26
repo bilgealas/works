@@ -1,0 +1,6 @@
+
+public interface Yag {
+
+	public void yagKullan();
+	
+}
