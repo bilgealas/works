@@ -1,0 +1,30 @@
+package komp;
+
+public class Is implements Yemek {
+
+	private String pisir;
+	private String ye;
+	
+	public Is(String pisir, String ye){
+		this.pisir=pisir;
+		this.ye=ye;
+		
+	}
+
+	@Override
+	public void pisir() {
+		System.out.println("Yemek pişirdim");
+	
+		
+	}
+
+	@Override
+	public void ye() {
+		System.out.println("yedim");
+		
+	}
+	
+	
+	
+
+}
