@@ -1,0 +1,14 @@
+package komp;
+
+public class Dene {
+
+	public static void main(String[] args) {
+		
+		Is a= new Is(null, null);
+		a.pisir();
+		a.ye();
+		System.out.println();
+		
+	}
+
+}
