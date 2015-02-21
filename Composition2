@@ -1,0 +1,8 @@
+package komp;
+
+public interface Yemek {
+
+	public void pisir();
+	public void ye();
+	
+}
